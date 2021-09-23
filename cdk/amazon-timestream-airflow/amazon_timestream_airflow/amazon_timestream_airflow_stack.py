@@ -48,6 +48,7 @@ class AmazonTimestreamAirflowStack(core.Stack):
                 iam.PolicyStatement(
                     actions=[
                         "s3:GetBucket*",
+                        "s3:PutObject",
                         "s3:List*",
                         "s3:GetObject*"
                     ],
